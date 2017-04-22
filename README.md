@@ -1,0 +1,1 @@
+This repository is created to share various Spring MVC examples.

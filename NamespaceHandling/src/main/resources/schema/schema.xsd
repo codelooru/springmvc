@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.codelooru.com/custns" xmlns:tns="http://www.codelooru.com/custns">
+  <xs:element name="registration">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:ppp1"/>
+        <xs:element ref="tns:ppp2"/>
+      </xs:sequence>
+      <xs:attribute name="id" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ppp1">
+    <xs:complexType>
+      <xs:attribute name="sdf" use="required" type="xs:string"/>
+      <xs:attribute name="attr2" use="required" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ppp2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="tns:ppp3"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ppp3">
+    <xs:complexType>
+      <xs:attribute name="safdg" use="required" type="xs:string"/>
+      <xs:attribute name="sf" use="required" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

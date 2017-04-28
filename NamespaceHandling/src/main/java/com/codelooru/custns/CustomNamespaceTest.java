@@ -16,7 +16,7 @@ public class CustomNamespaceTest {
 		MyDAO dao = appcontext.getBean("mydao-123", MyDAO.class);
 		
 		Assert.isTrue(dao == service.getDefaultDao());
-		//service.getDaoRegistry().get(arg0);
+		Assert.isTrue(dao == service.getDaoRegistry().get("dao1"));
 		System.out.println(Arrays.toString(dao.getFields().toArray()));
 		
 		appcontext.close();

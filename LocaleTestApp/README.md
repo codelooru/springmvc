@@ -1,5 +1,7 @@
 This is a Spring Boot application that provides a simple page to test the locale resolution.
 
+Read the blog post www.codelooru.com/2017/04/localization-with-spring.html for details.
+
 Examples are provided for
 - LocaleResolver
 - LocaleChangeInterceptor

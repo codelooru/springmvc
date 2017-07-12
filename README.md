@@ -1,1 +1,1 @@
-This repository is created to share various Spring MVC examples.
+This repository is created to share Spring and Java examples.
